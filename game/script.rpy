@@ -24,8 +24,10 @@ label start:
     menu:
         "DR_01 - Introductions":
             call DR_01
-        "DR_02 - Interactions":
+        "DR_02 - Costume Design":
             call DR_02
+        "DR_02 - Interactions":
+            call DR_03
 
         "Return to Menu":
             hide vin1 with dissolve

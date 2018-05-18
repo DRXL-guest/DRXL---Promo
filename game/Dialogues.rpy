@@ -15,7 +15,7 @@ label DR_01:
     h "Greetings to our lovely audience tuning in this evening. \nWe have a special treat just for you. "
     show h 12 at f22
     show k 11 at t21
-    h "Our plans are still in development, but there's nothing wrong with giving you a small taste of what's to come. "
+    h "Our plans are still in development, but there's nothing \nwrong with giving you a small taste of what's to come. "
     show h 13 at t22
     show k 13 at f21
     k "And if there is, this was totally all your idea, \nso everything's your fault! "
@@ -95,6 +95,31 @@ label DR_01:
     return
 
 label DR_02:
+    show fence with dissolve
+    show bg border
+    show vin2
+    with dissolve
+    play music static fadein 2.0
+    show h 11 at f22
+    show k 11 at t21
+    h "...Say, is this working?"
+    show h 11 at t22
+    show k 12 at f21
+    k "Of course, you dummy, just start already!"
+    show h 22 at f22
+    show k 11 at t21
+    h "Greetings to our lovely audience tuning in this evening. \nWe have a special treat just for you. "
+
+    hide h
+    hide k
+    hide bg border
+    hide fence
+    hide vin2
+    with fade
+    call start
+    return
+
+label DR_03:
     play music main fadein 2.0
     "This Video is not Avalible."
     with fade

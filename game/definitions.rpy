@@ -10,7 +10,9 @@ image bg splash = "backgrounds/dim_splash.png"
 image bg border = "backgrounds/borders.png"
 
 #backgrounds - White Fence
-image fence = "backgrounds/BG - Fence.png"
+image fence:
+    "backgrounds/BG - Fence.png"
+    alpha 0.34
 
 #MS silhouette
 image vin0:
